@@ -1,0 +1,132 @@
+.code_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-footer);
+}
+
+.code_footer-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.code_footer-heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+.code_footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
+.code_footer-btn p {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  word-spacing: 2px;
+}
+
+.code_footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+.code_footer-links div {
+  width: 250px;
+  margin: 1rem;
+}
+
+.code_footer-links_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+.code_footer-links_logo img {
+  width: 118px;
+  margin-bottom: 1rem;
+}
+.code_footer-links_logo p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+.code_footer-links_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.code_footer-links_div h4 {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.code_footer-links_div p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.code_footer-copyrigth {
+  font-family: var(--font-family);
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.code_footer-copyrigth p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+@media screen and (max-width: 850px) {
+  .code_footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .code_footer-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .code_footer-links div {
+    margin: 1rem 0;
+  }
+
+  .code_footer-btn p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .code_footer-heading h1 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}

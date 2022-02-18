@@ -1,0 +1,115 @@
+.code_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.code_navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.code_navbar-links_logo {
+  margin-right: 2rem;
+}
+.code_navbar-links_logo img {
+  width: 188px;
+}
+
+.code_navbar-links_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.code_navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.code_navbar-links_container p,
+.code_navbar-sign p,
+.code_navbar-menu_container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+  line-height: 25px;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.code_navbar-sign button,
+.code_navbar-menu_container button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.code_navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+.code_navbar-menu svg {
+  cursor: pointer;
+}
+
+.code_navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.code_navbar-menu_container p {
+  margin: 1rem 0;
+}
+.code_navbar-menu_container-links-sign {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .code_navbar-links_container {
+    display: none;
+  }
+  .code_navbar-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .code_navbar {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .code_navbar {
+    padding: 2rem;
+  }
+  .code_navbar-sign {
+    display: none;
+  }
+  .code_navbar-menu_container {
+    top: 20px;
+  }
+  .code_navbar-menu_container-links-sign {
+    display: block;
+  }
+}
